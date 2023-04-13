@@ -124,7 +124,7 @@ const senhaConf = ref('')
 <div>Estado: {{ estados }} </div>
 <div>Hobbies: {{ hobies }}</div>
 <div>Bio: {{ bio }}</div>
-<div>Linguagem de Programação: {{ lingPro }}</div>
+<div> Linguagem de Programação : {{ lingPro }}</div>
 
   </div>
 
@@ -155,6 +155,4 @@ const senhaConf = ref('')
 .enviar{
 font-weight: bold;
 }
-
-
 </style>
