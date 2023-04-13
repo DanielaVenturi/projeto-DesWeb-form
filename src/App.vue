@@ -15,12 +15,13 @@ const senhaConf = ref('')
 </script>
 
 <template>
-  <ul class="conteudo">
+  <div class="conteudo">
 
-<li class="tudo informacoes">
+<div class="tudo informacoes">
 
   <form @submit.prevent='enviar = !enviar'>
-<h1>Ediçao do Perfil de usuário</h1>
+
+<h1>Login</h1>
 <div>
   <p>Nome</p>
 
@@ -89,7 +90,7 @@ const senhaConf = ref('')
   <input type="text" v-model="hobies" placeholder="Digite um dos seus Hobbies" required maxlength="25"
     minlength="10">
 
-  <input type="text" v-model="bio" placeholder="Biografia curta" required maxlength="50" minlength="10">
+  <input type="text" v-model="bio" placeholder="Biografia curta" required maxlength="51" minlength="10">
 
   <select v-model="lingPro">
     <option value="">Linguagem De Programação</option>
@@ -104,17 +105,17 @@ const senhaConf = ref('')
   </select>
 </div>
 <br>
-<button type='submit' class="btn btn-outline-primary" >Enviar</button>
+<button type='submit' class="btn btn-outline-primary" >Cadastrar</button>
 </form>
 
-</li>
+</div>
 
 <div v-if="enviar">
 
-  <li class="tudo enviar">
+  <div class="tudo enviar">
 
-<div>Nome:    {{ nome }}</div>
-<div>Email:{{ email }}</div>
+<div> Nome:   {{ nome }}</div>
+<div> Email:{{ email }}</div>
 <div>Senha:  {{ senha }}</div>
 <div>Senha Confirmada: {{ senhaConf }}</div>
 <div>Data: {{ data }}</div> 
@@ -125,13 +126,35 @@ const senhaConf = ref('')
 <div>Bio: {{ bio }}</div>
 <div>Linguagem de Programação: {{ lingPro }}</div>
 
-</li>
+  </div>
 
 </div>
 
-  </ul>
+</div>
 </template>
 
 <style scoped>
+.conteudo{
+  color: #fff;
+  text-align: center;
+  
+}
+
+
+.tudo{
+  background-color: darkgrey;
+  border-style: outset;
+  
+  width: 400px;
+  
+}
+.informacoes{
+
+}
+
+.enviar{
+font-weight: bold;
+}
+
 
 </style>
