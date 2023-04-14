@@ -151,7 +151,7 @@ function handleFileUpload(e) {
 
      
         <div>
-          <h1>Login</h1>
+          <h1>Cadastro</h1>
           <hr>
 <div class="margin"><label for="nome">Nome:</label>
            {{ nome }}</div>
@@ -220,9 +220,9 @@ function handleFileUpload(e) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(152, 41, 221);
+  background-color: rgb(67, 176, 88);
   border-style: outset;
-  border-color: rgb(213, 111, 253);
+  border-color: rgb(84, 148, 59);
   height: 965px;
   width: 800px;
   margin: 0 auto;
@@ -236,7 +236,7 @@ function handleFileUpload(e) {
   height: 965px;
   width: 800px;
   margin: 0 auto;
-  border-color: rgb(140, 127, 255);
+  border-color: rgb(84, 148, 59);
 }
 
 .margin{margin-top: 10px;
@@ -253,20 +253,22 @@ input{
   font-weight: 300;
   border-radius: 10px;
   border: 1px solid;
-  background-color: rgba(183, 139, 238, 0.581);
+  background-color: rgba(215, 251, 220, 0.581);
 }
 select{
   font-size: 18px;
   font-weight: 300;
   border-radius: 10px;
   border: 1px solid;
-  background-color: rgba(183, 139, 238, 0.581);
+  background-color: rgba(215, 251, 220, 0.581);
 }
 img{
   width: 100px;
   height: 100px;
   border-radius: 50px;
   border: 2px solid;
+  border-color: black;
+  margin-top: -9px;
 }
 h1{
   font-size: 40px;
@@ -281,14 +283,20 @@ h3{
   color:  rgb(255, 255, 255);
 }
 button{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
   border-radius: 10px;
   border: 1px solid;
-  background-color: rgba(178, 86, 240, 0.581);
+  background-color: rgb(107, 167, 61);
   color: rgb(255, 255, 255);
-  margin-top: 30px;
+  margin-top: -5px;
 
+}
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-color: rgb(84, 148, 59);
 }
 
 
