@@ -15,6 +15,7 @@ const senhaConf = ref('')
 const user = ref({
   avatar: null
 })
+const mensagem = ref('')
 
 function handleFileUpload(e) {
   const target = e.target
@@ -22,6 +23,15 @@ function handleFileUpload(e) {
     const file = target.files[0]
     user.value.avatar = URL.createObjectURL(file)
   }
+}
+function senhaConf() {
+if (senha.value === senhaConf.value) {
+  mensagem.value =
+  return(true)
+}else{
+
+}
+
 }
 
 
@@ -110,8 +120,8 @@ function handleFileUpload(e) {
         <label for="bio">Um Pouco Sobre Você</label>
         <div class="margin">
           
-          <input name="bio" type="text" v-model="hobies" placeholder="Digite um dos seus Hobbies" required maxlength="25"
-            minlength="10"><br>
+          <textarea placeholder="Seus Hobbies" name="bio"  cols="25" rows="2"></textarea>
+          <br>
 
           <input name="bio" type="text" v-model="bio" placeholder="Biografia curta" required maxlength="51" minlength="10"><br>
 
@@ -299,7 +309,15 @@ hr{
   border-color: rgb(84, 148, 59);
 }
 
-
-
+textarea{
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 10px;
+  border: 1px solid;
+  background-color: rgba(215, 251, 220, 0.581);
+}
+placeholder{
+  color: black;
+}
 
 </style>
